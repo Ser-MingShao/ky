@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>移动服务门户</title>
+    <link rel="stylesheet" type="text/css" href="css/weui.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/weuix.css">
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+        .weui-tab .weui-tabbar__label {
+            font-size: 10px;
+        }
+        
+        .messageReddot:after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 8px;
+            height: 8px;
+            background-color: #f74c31;
+            border-radius: 5px;
+            right: 26%;
+            top: 10px;
+            background-clip: padding-box;
+        }
+        /*html, body {*/
+        /*overflow-y: inherit;*/
+        /*}*/
+    </style>
+    <script type="text/javascript">
+        document.addEventListener('plusready', function() {
+            //console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+
+        });
+
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
+    </script>
+</head>
+
+<body class="dk_theme_blue yuanxing">
+    <div class="weui-tab">
+        <div class="weui-tab__panel" id="iframe-box">
+
+            <div id="iframe0" class="iframes" style="height: 100%; overflow-y: scroll; display: block;">
+
+
+
+                <meta charset="utf-8">
+                <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+                <title>首页</title>
+                <style>
+                    .dk-fluid blockquote {
+                        margin-bottom: 0px;
+                    }
+                </style>
+                <script type="text/javascript">
+                </script>
+
+
+
+                <div class="dk-fluid">
+                    <div class="dk-pd homePage" style="overflow-x: hidden;">
+
+                        <div style="position: relative;overflow:hidden;" class="list5" id="ssk_593">
+                            <div class="abccc">
+                                <style>
+                                    .list5 .childrenFir .dk-header {
+                                        padding: 15px;
+                                        margin: 0;
+                                        width: auto;
+                                        position: fixed;
+                                        left: 0;
+                                        height: 36px;
+                                        top: 0;
+                                        right: 0;
+                                        z-index: 10;
+                                        background-color: #FFFFFF;
+                                    }
+                                    
+                                    .list5 .weui-flex {
+                                        display: -webkit-box;
+                                        display: -webkit-flex;
+                                        display: flex;
+                                    }
+                                    
+                                    .list5 .weui-flex__item {
+                                        -webkit-box-flex: 1;
+                                        -webkit-flex: 1;
+                                        flex: 1;
+                                    }
+                                    
+                                    .list5 .childrenFir div.searchbox {
+                                        width: 100%;
+                                        height: 33px;
+                                        line-height: 34px;
+                                        border-radius: 18px;
+                                        background-color: #FFFFFF;
+                                        border: 0;
+                                        padding: 0 40px 0 30px;
+                                        box-sizing: border-box;
+                                        -webkit-box-sizing: border-box;
+                                        font-size: 12px;
+                                        color: #595555;
+                                        background-repeat: no-repeat;
+                                        background-image: url(images/dk-search.png);
+                                        background-position: 10px center;
+                                        background-size: 15px;
+                                    }
+                                    
+                                    .list5 #close {
+                                        display: inline-block;
+                                        width: 36px;
+                                        height: 36px;
+                                        cursor: pointer;
+                                        position: absolute;
+                                        top: -3px;
+                                        right: 12px;
+                                        text-align: center;
+                                    }
+                                    
+                                    .list5 #close i {
+                                        display: inline-block;
+                                        width: 10px;
+                                        height: 1px;
+                                        background: #333;
+                                        transform: rotate(45deg) !important;
+                                    }
+                                    
+                                    .list5 #close i::after {
+                                        content: '';
+                                        display: block;
+                                        width: 10px;
+                                        height: 1px;
+                                        background: #333;
+                                        transform: rotate(-90deg);
+                                    }
+                                    
+                                    input[node-type=jsbridge] {
+                                        visibility: hidden;
+                                        display: none;
+                                    }
+                                </style>
+                                <div class="childrenFir" style="margin-bottom: 20px;">
+                                    <!-- <div style="padding: 0 10px;position: relative;">
+			<input type="text" placeholder="搜索">
+			<span id="close">
+				<i></i>
+			</span>
+		</div> -->
+                                    <div>
+                                        <div class="searchbox" onclick="dianji('console_search.html?searcjType=yy,xx')">
+                                            搜索</div>
+                                        <!-- <div><img onclick="qrCode(this)" style="position: absolute;right: 12px;top: 4px;" src="../images/dk-search.png" alt=""></div> -->
+                                        <div class="qr-btn" node-type="qr-btn" style="">
+                                            <img style="position: absolute;right: 12px;top: 4px;width: 25px;" src="images/scm.png" alt="">
+                                            <!-- <input node-type="jsbridge" type="file" accept="images/*" name="myPhoto" capture="camera" value="" /> -->
+                                            <input node-type="jsbridge" id="code" class="js_upFile cover1" type="file" name="myPhoto" accept="image/*" capture="camera" multiple="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="position: relative; overflow: hidden; margin-bottom: 20px; height: 172.857px;" class="list0" id="hd_823">
+                            <style>
+                                .list0 .childremFir {
+                                    height: 170px;
+                                    overflow: hidden;
+                                    border-radius: 10px;
+                                    position: relative;
+                                    max-width: 100%;
+                                    max-height: 80%;
+                                    overflow: hidden;
+                                    margin: 0px auto;
+                                }
+                                
+                                .list0 .swiper-wrapper,
+                                .list0 .swiper-slide {
+                                    border-radius: 10px;
+                                }
+                            </style>
+                            <div class="childrenFir">
+                                <div class="swiper-container swiper-container-initialized swiper-container-horizontal" style="overflow: unset; height: 147.857px; border-radius: 10px;">
+                                    <div class="swiper-wrapper" style="transform: translate3d(-1080px, 0px, 0px); transition-duration: 0ms;">
+                                        <div class="swiper-slide swiper-slide-prev" style="margin-right: 15px;">
+                                            <a onclick="dianji(&quot;null&quot;)"><img style="height: 100%;width:100%;border-radius: 10px;" src="https://www.hnkjxy.net.cn/attachment/core/label/2022_04/15_12/c9d921a9f97db70d.jpg" alt=""></a>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-active" style="margin-right: 15px;">
+                                            <a onclick="dianji(&quot;null&quot;)"><img style="height: 100%;width:100%;border-radius: 10px;" src="https://www.hnkjxy.net.cn/attachment/core/label/2021_05/18_20/a2a629f25f7a5c00.jpg" alt=""></a>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-next" style="margin-right: 15px;">
+                                            <a onclick="dianji(&quot;null&quot;)"><img style="height: 100%;width:100%;border-radius: 10px;" src="https://www.hnkjxy.net.cn/attachment/core/label/2021_05/18_20/e210025d498dd8c8.png" alt=""></a>
+                                        </div>
+                                        <div class="swiper-slide " style="margin-right: 15px;">
+                                            <a onclick="dianji(&quot;null&quot;)"><img style="height: 100%;width:100%;border-radius: 10px;" src="https://www.hnkjxy.net.cn/attachment/core/label/2022_03/29_14/c252673cf2ab5b4e.jpg" alt=""></a>
+                                        </div>
+                                        <div class="swiper-slide " style="margin-right: 15px;">
+                                            <a onclick="dianji(&quot;null&quot;)"><img style="height: 100%;width:100%;border-radius: 10px;" src="https://www.hnkjxy.net.cn/attachment/core/label/2022_03/25_16/8017eb9621ddbd07.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets" style="height: 20px;bottom: -20px;"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet"
+                                            tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet"
+                                            tabindex="0" role="button" aria-label="Go to slide 5"></span></div>
+                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="position: relative;overflow:hidden;" class="list1" id="yy_725">
+                            <div class="abccc">
+                                <style>
+                                    .list1 blockquote {
+                                        font-weight: 600;
+                                        padding-left: 5px;
+                                        font-size: 14px;
+                                        color: #424C56;
+                                        line-height: 15px;
+                                        margin-bottom: 15px;
+                                        text-align: left;
+                                        border-left: 3px solid #0088F4;
+                                    }
+                                    
+                                    .list1 .childContent {
+                                        height: auto;
+                                        border-radius: 10px;
+                                        width: calc(100% - 00px);
+                                        /* margin: 0 15px; */
+                                        overflow: unset;
+                                    }
+                                    
+                                    .list1 .childContent li {
+                                        width: 25%;
+                                        float: left;
+                                        text-align: center;
+                                        box-sizing: border-box;
+                                        padding: 0;
+                                        /* height: auto; */
+                                        min-height: 100px;
+                                    }
+                                    
+                                    .list1 .childContent li:active {
+                                        background-color: #ECECEC;
+                                    }
+                                    
+                                    .list1 .childContent a {
+                                        display: block;
+                                        padding: 15px 0 0;
+                                    }
+                                    
+                                    .list1 .childContent img {
+                                        width: 40px;
+                                        height: 40px;
+                                        display: block;
+                                        margin: 0 auto 8px;
+                                        border-radius: 10px;
+                                    }
+                                    
+                                    .yuanxing .list1 .childContent img {
+                                        border-radius: 50%;
+                                    }
+                                    
+                                    .list1 .childContent p {
+                                        font-size: 13px;
+                                        color: #666666;
+                                        line-height: 16px;
+                                        padding: 0 3px;
+                                    }
+                                    
+                                    .list1 .swiper-slide {
+                                        text-align: center;
+                                        font-size: 18px;
+                                        background: #fff;
+                                        display: -webkit-box;
+                                        display: -ms-flexbox;
+                                        display: -webkit-flex;
+                                        display: flex;
+                                        -webkit-box-pack: center;
+                                        -ms-flex-pack: center;
+                                        -webkit-box-align: center;
+                                        -ms-flex-align: center;
+                                    }
+                                </style>
+                                <div class="childrenFir">
+                                    <blockquote>我的应用</blockquote>
+                                    <div class="childContent">
+                                        <div class="swiper-container cur_1000 swiper-container-initialized swiper-container-horizontal" style="overflow: unset;margin-bottom:10px">
+                                            <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                                                <div class="swiper-slide swiper-slide-active" style="border-radius: 10px; width: 345px;">
+                                                    <ul style="width:100%;height:100%;">
+                                                        <li data-id="8e7bc47ff06242d7accb0139d7cf2ba3">
+                                                            <a class="yyAMor" style="position: relative;" href="./index2.htm"><img src="http://ydmh.hnkjxy.net.cn/profile/yyglNormalPic/20220314165425icon-test_1.png"></a>
+                                                            <p>学生请假</p>
+                                                        </li>
+                                                        <li data-id="45d6d74788494420949db23c5ea75762">
+                                                            <a class="yyAMor" jbmb="null" style="position: relative;" onclick="openurl(&quot;&quot;,&quot;&quot;,&quot;http://cas.hnkjxy.net.cn/mp-czzx/webs/yqsb/yqsb/xsyqtb1_dudpui.html&quot;)"><img src="http://ydmh.hnkjxy.net.cn/profile/yyglNormalPic/20220314162750bs200.png"></a>
+                                                            <p>健康打卡</p>
+                                                        </li>
+                                                        <li data-id="0">
+                                                            <a class="yyAMor" jbmb="undefined" style="position: relative;" onclick="openurl(&quot;undefined&quot;,&quot;undefined&quot;,&quot;perAppColl.html&quot;)"><img src="images/addTY.png"></a>
+                                                            <p>添加</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="position: relative;overflow:hidden;" class="list3" id="lb_21732750">
+                            <div class="abccc">
+                                <style>
+                                    .list3 blockquote {
+                                        margin: 5px 0;
+                                        float: left;
+                                        font-weight: 600;
+                                        padding-left: 5px;
+                                        font-size: 14px;
+                                        color: #424C56;
+                                        line-height: 15px;
+                                        text-align: left;
+                                        border-left: 3px solid #0088F4;
+                                        /* position: relative; */
+                                    }
+                                    
+                                    .list3 .box {
+                                        /*height: 198px;*/
+                                        overflow: hidden;
+                                        border-radius: 10px;
+                                        overflow-y: scroll;
+                                        position: relative;
+                                    }
+                                    
+                                    .list3 .childContent {
+                                        height: auto;
+                                        border-radius: 10px;
+                                        position: absolute;
+                                        width: calc(100% - 0px);
+                                        background-color: #fff;
+                                        /* margin: 0 15px; */
+                                    }
+                                    
+                                    .list3 .childContent .ft {
+                                        /* margin: 0px 15px; */
+                                        padding: 5px 15px;
+                                        border-bottom: 1px solid #F2F4F5;
+                                    }
+                                    
+                                    .list3 .childContent .ft:active {
+                                        background-color: #ECECEC;
+                                    }
+                                    
+                                    .list3 .ft .ft_top {
+                                        overflow: hidden;
+                                        /*height: 30px;*/
+                                        line-height: 25px;
+                                        color: #647284;
+                                    }
+                                    
+                                    .list3 .ft .ft_bo {
+                                        overflow: hidden;
+                                        height: 25px;
+                                        line-height: 25px;
+                                        color: #647284;
+                                    }
+                                    
+                                    .list3 .ft .ft_lastbo {
+                                        overflow: hidden;
+                                        /*height: 25px;*/
+                                        line-height: 25px;
+                                        color: #647284;
+                                    }
+                                    
+                                    .list3 .ft .ft_lastbo .title {
+                                        width: 100%;
+                                        /*height: 25px;*/
+                                        line-height: 25px;
+                                        text-align: left;
+                                        font-size: 14px;
+                                        color: rgb(110, 113, 117);
+                                    }
+                                    
+                                    .list3 .ft .ft_bo .title {
+                                        float: left;
+                                        width: 100%;
+                                        height: 25px;
+                                        line-height: 25px;
+                                        text-align: left;
+                                        font-size: 14px;
+                                        color: rgb(110, 113, 117);
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                    }
+                                    
+                                    .list3 .ft .ft_bo .name {
+                                        float: right;
+                                        font-size: 12px;
+                                        height: 25px;
+                                        /*background-color: #eee;*/
+                                        line-height: 25px;
+                                        /* padding: 5px 5px; */
+                                        /*margin-top: 7.5px;*/
+                                        border-radius: 5px;
+                                        max-width: 40%;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                    }
+                                    
+                                    .list3 .ft_top .title {
+                                        float: left;
+                                        font-size: 14px;
+                                        width: 100%;
+                                        /*height: 30px;*/
+                                        line-height: 22px;
+                                        color: #000;
+                                        /*overflow: hidden;*/
+                                        /*white-space: nowrap;*/
+                                        /*text-overflow: ellipsis;*/
+                                    }
+                                    
+                                    .list3 .ft_top .name {
+                                        float: right;
+                                        font-size: 12px;
+                                        height: 20px;
+                                        /*background-color: #eee;*/
+                                        line-height: 20px;
+                                        /* padding: 5px 5px; */
+                                        margin-top: 7.5px;
+                                        border-radius: 5px;
+                                        max-width: 15%;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                    }
+                                    
+                                    .list3 blockquote p {
+                                        height: 15px;
+                                        min-width: 15px;
+                                        line-height: 15px;
+                                        text-align: center;
+                                        margin-left: 5px;
+                                        border-radius: 15px;
+                                        font-size: 10px;
+                                        color: #fff;
+                                        background-color: red;
+                                        float: left;
+                                        padding: 0 2px;
+                                    }
+                                </style>
+                                <div class="childrenFir">
+                                    <div style="overflow: hidden;margin-bottom: 10px;">
+                                        <blockquote><span style="float:left">校园新闻</span></blockquote><span class="more" style="float: right;line-height: 15px;margin: 5px;font-size: 12px;" onclick="dianji('configListPage.html?pid=lb_21732750')">MORE</span>
+                                    </div>
+                                    <div class="box" style="margin-bottom: 20px; height: 196px;" id="lb_21732750_box">
+                                        <div class="childContent comment1" data="0" id="lb_21732750_comment1">
+                                            <div class="ft" style="overflow:hidden;" onclick="dianji(&quot;http://www.hnkjxy.net.cn/html/34/2022-09-16/content-8640.html&quot;)">
+                                                <div>
+                                                    <div class="ft_top">
+                                                        <div class="title">我校圆满完成长沙市“护网2022”网络攻防演习任务</div>
+                                                    </div>
+                                                    <div class="ft_bo" style="display:block">
+                                                        <div class="title">2022-09-16</div>
+                                                    </div>
+                                                    <div class="ft_lastbo">
+                                                        <div class="title"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ft" style="overflow:hidden;" onclick="dianji(&quot;http://www.hnkjxy.net.cn/html/34/2022-09-14/content-8635.html&quot;)">
+                                                <div>
+                                                    <div class="ft_top">
+                                                        <div class="title">学校领导走访慰问退休老同志</div>
+                                                    </div>
+                                                    <div class="ft_bo" style="display:block">
+                                                        <div class="title">2022-09-14</div>
+                                                    </div>
+                                                    <div class="ft_lastbo">
+                                                        <div class="title"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ft" style="overflow:hidden;" onclick="dianji(&quot;http://www.hnkjxy.net.cn/html/34/2022-09-13/content-8631.html&quot;)">
+                                                <div>
+                                                    <div class="ft_top">
+                                                        <div class="title">学校举行2022年教师节座谈会</div>
+                                                    </div>
+                                                    <div class="ft_bo" style="display:block">
+                                                        <div class="title">2022-09-13</div>
+                                                    </div>
+                                                    <div class="ft_lastbo">
+                                                        <div class="title"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="childContent comment2" data="0" id="lb_21732750_comment2">
+                                            <div class="ft" style="overflow:hidden;" onclick="dianji(&quot;http://www.hnkjxy.net.cn/html/34/2022-09-16/content-8640.html&quot;)">
+                                                <div>
+                                                    <div class="ft_top">
+                                                        <div class="title">我校圆满完成长沙市“护网2022”网络攻防演习任务</div>
+                                                    </div>
+                                                    <div class="ft_bo" style="display:block">
+                                                        <div class="title">2022-09-16</div>
+                                                    </div>
+                                                    <div class="ft_lastbo">
+                                                        <div class="title"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ft" style="overflow:hidden;" onclick="dianji(&quot;http://www.hnkjxy.net.cn/html/34/2022-09-14/content-8635.html&quot;)">
+                                                <div>
+                                                    <div class="ft_top">
+                                                        <div class="title">学校领导走访慰问退休老同志</div>
+                                                    </div>
+                                                    <div class="ft_bo" style="display:block">
+                                                        <div class="title">2022-09-14</div>
+                                                    </div>
+                                                    <div class="ft_lastbo">
+                                                        <div class="title"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ft" style="overflow:hidden;" onclick="dianji(&quot;http://www.hnkjxy.net.cn/html/34/2022-09-13/content-8631.html&quot;)">
+                                                <div>
+                                                    <div class="ft_top">
+                                                        <div class="title">学校举行2022年教师节座谈会</div>
+                                                    </div>
+                                                    <div class="ft_bo" style="display:block">
+                                                        <div class="title">2022-09-13</div>
+                                                    </div>
+                                                    <div class="ft_lastbo">
+                                                        <div class="title"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loadMask weui-mask weui-actions_mask weui-mask--visible" style="display: none;transform-origin: 0px 0px; opacity: 1; transform: scale(1, 1);"></div>
+                    <div style="display: none;transform: translate(-50%, -50%) !important;" class="loadMask weui-toast weui_loading_toast weui-toast--visible">
+                        <div class="weui_loading"><i class="weui-loading weui-icon_toast"></i></div>
+                        <p class="weui-toast_content">数据加载中</p>
+                    </div>
+                </div>
+                <img class="hide" src="" alt="" id="img" style="display: none;">
+                <div class="loading2 hide" data-text="加载中..."></div>
+                <!-- <script src="js/qrcode.js"></script> -->
+                <script src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js" type="text/javascript" charset="utf-8"></script>
+                <!--<script src="js/console.js"></script>-->
+                <script src="js/console.js"></script>
+
+
+            </div>
+            <div id="iframe1" class="iframes" style="height: 100%; overflow-y: scroll; display: none;"></div>
+            <div id="iframe2" class="iframes" style="height: 100%; overflow-y: scroll; display: none;"></div>
+        </div>
+        <div class="weui-tabbar">
+            <a href="javascript:;" id="0" class="weui-tabbar__item  weui-bar__item_on" baseurl="console.html">
+                <img class="img1" src="http://ydmh.hnkjxy.net.cn/../../images/icon-menu/house.png">
+                <img class="img2" src="http://ydmh.hnkjxy.net.cn/profile/themeIcon/blue/house.png">
+                <p class="weui-tabbar__label">首页</p>
+            </a>
+            <a href="javascript:;" id="1" class="weui-tabbar__item " baseurl="appCenter.html">
+                <img class="img1" src="http://ydmh.hnkjxy.net.cn/../../images/icon-menu/zzjg.png">
+                <img class="img2" src="http://ydmh.hnkjxy.net.cn/profile/themeIcon/blue/zzjg.png">
+                <p class="weui-tabbar__label">应用中心</p>
+            </a>
+            <a href="javascript:;" id="2" class="weui-tabbar__item " baseurl="my.html">
+                <img class="img1" src="http://ydmh.hnkjxy.net.cn/../../images/icon-menu/1navbar_wd.png">
+                <img class="img2" src="http://ydmh.hnkjxy.net.cn/profile/themeIcon/blue/1navbar_wd.png">
+                <p class="weui-tabbar__label">个人中心</p>
+            </a>
+        </div>
+
+    </div>
+    <div id="mask_div00" class="mask_div" style="transform: rotate(-15deg); position: absolute; left: 10px; top: 10px; overflow: hidden; z-index: 1029; pointer-events: none; opacity: 0.5; font-size: 15px; font-family: 微软雅黑; color: rgb(215, 215, 215); text-align: center; width: 355px; height: 50px; display: block;">
+        软件学院-<span id="xms">SerMs</span>-2061020514332</div>
+    <div id="mask_div10" class="mask_div" style="transform: rotate(-15deg); position: absolute; left: 10px; top: 110px; overflow: hidden; z-index: 1029; pointer-events: none; opacity: 0.5; font-size: 15px; font-family: 微软雅黑; color: rgb(215, 215, 215); text-align: center; width: 355px; height: 50px; display: block;">
+        软件学院-<span id="xms">SerMs</span>-2061020514332</div>
+    <div id="mask_div20" class="mask_div" style="transform: rotate(-15deg); position: absolute; left: 10px; top: 210px; overflow: hidden; z-index: 1029; pointer-events: none; opacity: 0.5; font-size: 15px; font-family: 微软雅黑; color: rgb(215, 215, 215); text-align: center; width: 355px; height: 50px; display: block;">
+        软件学院-<span id="xms">SerMs</span>-2061020514332</div>
+    <div id="mask_div30" class="mask_div" style="transform: rotate(-15deg); position: absolute; left: 10px; top: 310px; overflow: hidden; z-index: 1029; pointer-events: none; opacity: 0.5; font-size: 15px; font-family: 微软雅黑; color: rgb(215, 215, 215); text-align: center; width: 355px; height: 50px; display: block;">
+        软件学院-<span id="xms">SerMs</span>-2061020514332</div>
+    <div id="mask_div40" class="mask_div" style="transform: rotate(-15deg); position: absolute; left: 10px; top: 410px; overflow: hidden; z-index: 1029; pointer-events: none; opacity: 0.5; font-size: 15px; font-family: 微软雅黑; color: rgb(215, 215, 215); text-align: center; width: 355px; height: 50px; display: block;">
+        软件学院-<span id="xms">SerMs</span>-2061020514332</div>
+    <div id="mask_div50" class="mask_div" style="transform: rotate(-15deg); position: absolute; left: 10px; top: 510px; overflow: hidden; z-index: 1029; pointer-events: none; opacity: 0.5; font-size: 15px; font-family: 微软雅黑; color: rgb(215, 215, 215); text-align: center; width: 355px; height: 50px; display: block;">
+        软件学院-<span id="xms">SerMs</span>-2061020514332</div>
+
+
+</body>
+<script>
+    document.getElementById("xms").innerHTML = localStorage.getItem("xm"); //语法
+</script>
+
+</html>

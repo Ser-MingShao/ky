@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <form action="./index2.htm">
+        <!-- <form> -->
+        <input type="text" id="ksrq" name=param placeholder="开始时间">
+        <input type="text" id="jssj" name=param placeholder="结束时间">
+        <input type="text" id="qjts" name=param placeholder="请多久">
+        <input type="text" id="qjsy" name=param placeholder="你为毛请假">
+        <input type="text" id="fdy" name=param placeholder="你辅导员">
+        <input type="text" id="sjh" name=param placeholder="你手机号">
+        <input type="text" id="xm" name=param placeholder="你叫啥">
+        <button onclick="tj()">提交申请</button>
+    </form>
+
+</body>
+<script type=text/javascript>
+    function tj() {
+        console.log('进来了');
+        localStorage.setItem("kstime", document.getElementById("ksrq").value);
+        localStorage.setItem("jstiem", document.getElementById("jssj").value);
+        localStorage.setItem("qjts", document.getElementById("qjts").value);
+        localStorage.setItem("qjsy", document.getElementById("qjsy").value);
+        localStorage.setItem("fdy", document.getElementById("fdy").value);
+        localStorage.setItem("sjh", document.getElementById("sjh").value);
+        localStorage.setItem("xm", document.getElementById("xm").value);
+    }
+</script>
+
+</html>
